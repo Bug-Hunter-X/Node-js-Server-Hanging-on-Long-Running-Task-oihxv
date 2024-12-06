@@ -1,0 +1,3 @@
+# Node.js Server Hanging on Long-Running Task
+
+This repository demonstrates a common issue in Node.js: blocking the event loop with a long-running synchronous operation.  The `bug.js` file contains a server that hangs because a 5-second while loop blocks the event loop, preventing it from processing other requests or events.  The `bugSolution.js` file shows how to resolve this by using asynchronous operations.
